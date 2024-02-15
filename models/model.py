@@ -8,10 +8,10 @@ logger = logging.getLogger(__name__)
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 tokenizer = AutoTokenizer.from_pretrained(
-    pretrained_model_name_or_path='./model')
+    pretrained_model_name_or_path='./NAMEDIRECTORIMODEL')
 
 model = AutoModelForSequenceClassification.from_pretrained(
-    pretrained_model_name_or_path='./model')
+    pretrained_model_name_or_path='./NAMEDIRECTORIMODEL')
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
