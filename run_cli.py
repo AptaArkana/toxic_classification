@@ -4,9 +4,9 @@ from test_cli import TextToxicityChecker
 
 def main():
     # Dummy tokenizer, device, and model for illustration purposes
-    tokenizer = AutoTokenizer.from_pretrained(pretrained_model_name_or_path='./model')
+    tokenizer = AutoTokenizer.from_pretrained(pretrained_model_name_or_path='./NAMEDIRECTORIMODEL')
 
-    model = AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='./model')
+    model = AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='./NAMEDIRECTORIMODEL')
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
